@@ -10,12 +10,16 @@ let numbers = randomNumbers.sort((a, b) => {
 // Criando uma função de comparação para poder colocar todos os números em ordem crescente e organizada
 
 numbersOdd = []
+numbersPair = []
 
 for (var i = 0; i < numbers.length; i++) {
     let number = numbers[i]
     if ((number % 2) != 0) {
         numbersOdd.push(number)
+    } else {
+        numbersPair.push(number)
     }
 }
-
-console.log(numbersOdd.length)
+console.log(numbers)
+console.log(`A quantidade de números ímpares é ${numbersOdd.length}`)
+console.log(`A quantidade de números Pares é ${numbersPair.length}`)
